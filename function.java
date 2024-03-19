@@ -12,8 +12,29 @@ public class function{
     public void functionNum (){
         System.out.println(this.val);
     }
+    //方法重载
+    public static int add(int x , int y) {
+        return x + y;
+    }
+    public static int add(int x , int y , int z) {
+        return x + y + z;
+    }
+    public static double add(double x, double y) {
+        return x + y;
+    }
     public static void main(String[] args) {
-        //Scanner input = new Scanner(System.in);
+    int Sum1 = add(1,9);//方法重载
+    int Sum2 = add(1,10,49);//方法重载
+    double Sum3 = add(1.2,8.1);//方法重载
+    System.out.println(Sum3);
+    System.out.println(Sum1);
+    System.out.println(Sum2);
+        
+    }
+}
+
+/*
+         * //Scanner input = new Scanner(System.in);
         //int Num = input.nextInt();
         int Num = 9;
         //创建一个元素容量为10个的字符串
@@ -33,6 +54,5 @@ public class function{
         System.out.println(rec);
         function test = new function(Num);
         test.functionNum();
+         */
         
-    }
-}
